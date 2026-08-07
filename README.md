@@ -7,7 +7,7 @@
 
 # Português
 
-## Why — Por que este projeto existe?
+## Why: Por que este projeto existe?
 
 Bancos digitais recebem um grande volume de mensagens sobre Pix, muitas delas relacionadas a limites, devoluções, golpes, agendamentos e chaves.
 
@@ -17,7 +17,7 @@ Este projeto propõe uma base para um assistente de triagem que apoie esse atend
 
 O objetivo é reduzir respostas inconsistentes, limitar respostas fora do escopo e demonstrar como controles de segurança podem ser incorporados desde o início da solução.
 
-## What — O que o assistente faz?
+## What: O que o assistente faz?
 
 O assistente foi desenhado para:
 
@@ -36,7 +36,7 @@ As categorias iniciais do projeto são:
 - Agendamento
 - Chave Pix
 
-## Who — Para quem esta solução foi pensada?
+## Who: Para quem esta solução foi pensada?
 
 A solução representa um cenário de atendimento de um banco digital.
 
@@ -49,7 +49,7 @@ Ela pode apoiar equipes responsáveis pelo primeiro nível de atendimento ao cli
 
 Neste projeto, não são utilizados dados reais de clientes.
 
-## How — Como funciona?
+## How: Como funciona?
 
 O fluxo foi desenhado de forma simples:
 
@@ -78,7 +78,7 @@ Os materiais selecionados cobrem temas como:
 
 Esses documentos funcionam como referência para que as respostas sejam baseadas em informações verificáveis.
 
-## How — Como a segurança é tratada?
+## How: Como a segurança é tratada?
 
 A solução foi planejada com alguns princípios importantes desde o início:
 
@@ -95,7 +95,7 @@ A AWS é responsável pela infraestrutura dos serviços utilizados.
 
 A Squad é responsável pela configuração segura desses serviços, pelos acessos concedidos, pelos documentos utilizados e pelas regras que definem o comportamento do assistente.
 
-## What — O que está sendo validado?
+## What: O que está sendo validado?
 
 Durante a Sprint, a Squad valida os principais componentes necessários para essa experiência:
 
@@ -108,7 +108,7 @@ Durante a Sprint, a Squad valida os principais componentes necessários para ess
 
 O objetivo desta etapa não é entregar um sistema bancário completo para produção, mas validar os fundamentos necessários para uma solução futura.
 
-## When — Em que etapa estamos?
+## When: Em que etapa estamos?
 
 O projeto está em desenvolvimento.
 
@@ -137,7 +137,7 @@ Ao final da Sprint, a Squad deve demonstrar que o assistente consegue:
 
 # English
 
-## Why — Why does this project exist?
+## Why: Why does this project exist?
 
 Digital banks receive a high volume of Pix-related customer messages, including questions about transaction limits, refunds, fraud, scheduling, and Pix keys.
 
@@ -147,7 +147,7 @@ This project proposes the foundation for a triage assistant that supports custom
 
 The goal is to reduce inconsistent answers, limit out-of-scope responses, and demonstrate how security controls can be included from the beginning of the solution.
 
-## What — What does the assistant do?
+## What: What does the assistant do?
 
 The assistant is designed to:
 
@@ -166,7 +166,7 @@ The initial categories are:
 - Scheduling
 - Pix Key
 
-## Who — Who is this solution for?
+## Who: Who is this solution for?
 
 The solution represents a digital banking customer service scenario.
 
@@ -179,7 +179,7 @@ It can support teams responsible for first-level customer interactions, especial
 
 No real customer data is used in this project.
 
-## How — How does it work?
+## How: How does it work?
 
 The flow is intentionally simple:
 
@@ -208,7 +208,7 @@ The selected materials cover topics such as:
 
 These documents provide a reliable reference so that responses can be grounded in verifiable information.
 
-## How — How is security handled?
+## How: How is security handled?
 
 The solution was designed around several principles from the beginning:
 
@@ -225,7 +225,7 @@ AWS is responsible for the infrastructure supporting the services used in the pr
 
 The Squad is responsible for securely configuring those services, managing access, selecting the documents used, and defining the assistant's behavioral boundaries.
 
-## What — What is being validated?
+## What: What is being validated?
 
 During the Sprint, the Squad validates the main components required for this experience:
 
@@ -238,7 +238,7 @@ During the Sprint, the Squad validates the main components required for this exp
 
 The purpose of this stage is not to deliver a complete production banking system, but to validate the foundations required for a future solution.
 
-## When — What stage is the project in?
+## When: What stage is the project in?
 
 The project is currently in development.
 
