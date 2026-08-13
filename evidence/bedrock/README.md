@@ -2,7 +2,7 @@
 
 ## Frente de atuação
 
-- Amazon Bedrock, Triagem, Respostas Fundamentadas, Avaliação e Stretch.
+- Amazon Bedrock, Triagem, Respostas Fundamentadas, Avaliação, Least Privilege no Amazon Bedrock e Bônus stretch (exploração de recursos avançado).
 
 ## Contribuição
 
