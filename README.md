@@ -82,7 +82,7 @@ O trabalho foi desenvolvido pela **Squad 4 - AI/R Agentic AI Engineering**, com 
 | **João Vitor Althaus Godoi** | Organização dos acessos e separação segura de responsabilidades. |
 | **Kaique Silva Sousa** | Armazenamento protegido e organização dos documentos oficiais. |
 | **Natan Alencar Maia** | Levantamento da estrutura de rede e dos controles de comunicação. |
-| **Bruno Jordão das Neves Moura** | Avaliação dos modelos, testes de triagem, respostas baseadas em documentos e análise de evolução da base de conhecimento. |
+| **Bruno Jordão das Neves Moura** | Avaliação e seleção do modelo, testes de triagem e de respostas baseadas em documentos, análise do acesso mínimo necessário no Amazon Bedrock e exploração do Amazon Bedrock Knowledge Bases como evolução futura da solução (Stretch). |
 | **José Ivanildo de Oliveira Marques** | Regras de segurança e conformidade aplicadas às respostas. |
 
 ## Resultados de negócio observados
