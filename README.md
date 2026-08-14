@@ -133,4 +133,3 @@ A próxima fase deve transformar a prova de conceito em um piloto mensurável. A
 ---
 
 **Squad 4 - AI/R Agentic AI Engineering**  
-Projeto educacional desenvolvido no contexto da Sprint 4.
