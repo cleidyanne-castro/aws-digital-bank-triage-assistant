@@ -1,264 +1,135 @@
 # Assistente de Triagem Pix
-# Pix Triage Assistant
 
-> Projeto em andamento / Work in progress
+> Prova de conceito da Squad 4 para apoiar o primeiro atendimento de clientes de um banco digital com mais agilidade, consistência e segurança.
 
----
+## Visão executiva
 
-# Português
+O Assistente de Triagem Pix recebe uma mensagem fictícia, identifica o assunto principal e prepara uma resposta inicial com base em documentos públicos do Banco Central do Brasil.
 
-## Why: Por que este projeto existe?
+A solução foi criada para demonstrar como a inteligência artificial pode apoiar o atendimento sem movimentar dinheiro, tomar decisões financeiras ou substituir a análise humana. Nenhum dado real de cliente, conta ou transação foi utilizado.
 
-Bancos digitais recebem um grande volume de mensagens sobre Pix, muitas delas relacionadas a limites, devoluções, golpes, agendamentos e chaves.
+## O que foi desenvolvido?
 
-Responder esse tipo de solicitação com rapidez é importante, mas a resposta também precisa ser consistente, segura e baseada em informações confiáveis.
+Foi desenvolvida uma prova de conceito capaz de:
 
-Este projeto propõe uma base para um assistente de triagem que apoie esse atendimento, ajudando a identificar o assunto da mensagem e a gerar uma resposta inicial com base em documentos oficiais.
+- direcionar mensagens para cinco assuntos: **Devolução, Limite, Golpe/Fraude, Agendamento e Chave Pix**;
+- reconhecer solicitações que não pertencem ao escopo do assistente;
+- consultar informações oficiais fornecidas à solução;
+- produzir uma resposta inicial sem completar lacunas com informações não confirmadas;
+- aplicar uma barreira de segurança antes de apresentar a resposta;
+- registrar atividades, acompanhar sinais de funcionamento e visualizar custos da conta;
+- manter documentos protegidos e acessíveis apenas às pessoas e aos serviços autorizados.
 
-O objetivo é reduzir respostas inconsistentes, limitar respostas fora do escopo e demonstrar como controles de segurança podem ser incorporados desde o início da solução.
+### Indicadores da demonstração
 
-## What: O que o assistente faz?
+| Indicador | Resultado |
+|---|---:|
+| Assuntos de atendimento definidos | 5 |
+| Mensagens fictícias avaliadas | 6 |
+| Classificações corretas na amostra controlada | 6 de 6 |
+| Documentos oficiais preparados como referência | 4 |
+| Cenários de resposta baseada em documento | 3 |
+| Dados reais de clientes utilizados | 0 |
 
-O assistente foi desenhado para:
+O resultado de 6 em 6 representa apenas uma amostra pequena e controlada. Ele confirma a viabilidade da proposta, mas não equivale ao desempenho esperado em produção.
 
-- identificar o tema principal de uma mensagem sobre Pix;
-- classificar solicitações em categorias previamente definidas;
-- gerar respostas baseadas em documentos públicos e oficiais;
-- evitar respostas que não estejam sustentadas pelas informações disponíveis;
-- recusar solicitações fora do escopo definido;
-- aplicar regras de segurança e conformidade ao fluxo de resposta.
+## Por que esta solução importa?
 
-As categorias iniciais do projeto são:
+Equipes de atendimento recebem muitas perguntas repetidas sobre Pix. O desafio não é apenas responder rápido: é responder de forma consistente, usar uma fonte confiável e reconhecer quando a situação precisa ser encaminhada.
 
-- Devolução
-- Limite
-- Golpe/Fraude
-- Agendamento
-- Chave Pix
+A proposta pode gerar valor ao negócio ao:
 
-## Who: Para quem esta solução foi pensada?
+- reduzir o tempo gasto na identificação do motivo do contato;
+- aumentar a consistência do primeiro atendimento;
+- facilitar o direcionamento para a fila adequada;
+- diminuir respostas sem fundamento;
+- apoiar a rastreabilidade das decisões;
+- criar uma base segura para futuras automações.
 
-A solução representa um cenário de atendimento de um banco digital.
+Esses benefícios são potenciais e precisam ser confirmados em uma etapa posterior, com maior volume de testes e indicadores operacionais.
 
-Ela pode apoiar equipes responsáveis pelo primeiro nível de atendimento ao cliente, especialmente em situações em que é necessário:
+## Como funciona?
 
-- identificar rapidamente o assunto da solicitação;
-- consultar informações oficiais;
-- manter consistência nas respostas;
-- encaminhar situações que não devem ser respondidas automaticamente.
+1. **Receber:** o cliente envia uma mensagem sobre Pix.
+2. **Identificar:** o assistente reconhece o assunto e direciona a solicitação.
+3. **Consultar:** a resposta utiliza informações oficiais disponibilizadas à solução.
+4. **Verificar:** uma barreira avalia se a solicitação está dentro do escopo permitido.
+5. **Responder ou encaminhar:** o assistente apresenta uma orientação inicial ou informa que o caso exige outro canal.
 
-Neste projeto, não são utilizados dados reais de clientes.
+A solução também mantém controles de acesso, histórico de atividades, acompanhamento do ambiente e visibilidade de custos. Assim, o ganho de agilidade não fica separado da segurança e da governança.
 
-## How: Como funciona?
+## Quando esta solução deve ser utilizada?
 
-O fluxo foi desenhado de forma simples:
+O projeto está na fase de **prova de conceito validada em ambiente controlado**. Ele está pronto para demonstração e avaliação dos aprendizados da Sprint 4, mas ainda não é um produto bancário de produção.
 
-Cliente envia uma mensagem sobre Pix  
-↓  
-O assunto da mensagem é identificado  
-↓  
-O assistente utiliza informações autorizadas  
-↓  
-Regras de segurança e conformidade são aplicadas  
-↓  
-A resposta é apresentada ao cliente
+Antes de uma utilização real, será necessário:
 
-Quando a solicitação não está dentro do escopo do assistente, a resposta deve ser bloqueada ou recusada de forma apropriada.
+- ampliar a quantidade e a variedade dos testes;
+- incluir mensagens ambíguas e situações de exceção;
+- definir metas de qualidade, tempo de resposta e encaminhamento;
+- realizar avaliações de privacidade, segurança, risco e conformidade;
+- integrar a solução aos canais e processos de atendimento;
+- acompanhar a qualidade das respostas ao longo do tempo;
+- validar custos em um ambiente dedicado.
 
-### Fontes de informação
+## Quem participou?
 
-A base de conhecimento utiliza documentos públicos e oficiais do Banco Central do Brasil relacionados ao Pix.
+O trabalho foi desenvolvido pela **Squad 4 - AI/R Agentic AI Engineering**, com responsabilidades complementares:
 
-Os materiais selecionados cobrem temas como:
+| Integrante | Contribuição para a entrega |
+|---|---|
+| **Cleidyanne Castro Pereira** | Produto, visão da solução, consolidação do relatório, acompanhamento do ambiente e apresentação executiva. |
+| **João Vitor Althaus Godoi** | Organização dos acessos e separação segura de responsabilidades. |
+| **Kaique Silva Sousa** | Armazenamento protegido e organização dos documentos oficiais. |
+| **Natan Alencar Maia** | Levantamento da estrutura de rede e dos controles de comunicação. |
+| **Bruno Jordão das Neves Moura** | Avaliação e seleção do modelo, testes de triagem e de respostas baseadas em documentos, análise do acesso mínimo necessário no Amazon Bedrock e exploração do Amazon Bedrock Knowledge Bases como evolução futura da solução (Stretch). |
+| **José Ivanildo de Oliveira Marques** | Regras de segurança e conformidade aplicadas às respostas. |
 
-- experiência do usuário;
-- funcionamento das transações;
-- resolução de disputas;
-- tempos e prazos operacionais.
+## Resultados de negócio observados
 
-Esses documentos funcionam como referência para que as respostas sejam baseadas em informações verificáveis.
+A demonstração confirmou que a proposta consegue:
 
-## How: Como a segurança é tratada?
+- classificar corretamente as seis mensagens da amostra;
+- recusar uma solicitação fora do escopo definido;
+- responder quando a informação está presente no documento;
+- reconhecer quando o documento não possui informação suficiente;
+- bloquear uma orientação de investimento após a aplicação da barreira de segurança;
+- manter evidências de acesso, armazenamento, testes, acompanhamento e custos.
 
-A solução foi planejada com alguns princípios importantes desde o início:
+A escolha do modelo considerou qualidade suficiente para o cenário e menor custo estimado entre as opções avaliadas. Os números obtidos no ambiente de teste não devem ser tratados como previsão de custo ou desempenho em produção.
 
-- utilização apenas de documentos públicos ou autorizados;
-- ausência de dados reais de clientes;
-- armazenamento dos documentos sem acesso público;
-- concessão apenas dos acessos necessários;
-- aplicação de controles para reduzir respostas inadequadas;
-- recusa de solicitações fora do escopo definido.
+## Limites da prova de conceito
 
-A responsabilidade pela segurança é compartilhada.
+Esta entrega:
 
-A AWS é responsável pela infraestrutura dos serviços utilizados.
+- não usa dados reais de clientes;
+- não movimenta valores;
+- não executa transações Pix;
+- não oferece recomendação financeira;
+- não substitui atendimento humano, jurídico ou de segurança;
+- não representa uma solução pronta para produção.
 
-A Squad é responsável pela configuração segura desses serviços, pelos acessos concedidos, pelos documentos utilizados e pelas regras que definem o comportamento do assistente.
+Casos de fraude, risco financeiro, dados pessoais, conflito de informação ou ausência de fonte confiável devem ser encaminhados para análise humana.
 
-## What: O que está sendo validado?
+## Visão da solução
 
-Durante a Sprint, a Squad valida os principais componentes necessários para essa experiência:
+![Diagrama conceitual do assistente: a mensagem passa pela triagem, consulta a documentos oficiais e regras de segurança antes da resposta.](docs/architecture/Arquitetura.png)
 
-- classificação de mensagens por assunto;
-- geração de respostas baseadas em documentos oficiais;
-- comportamento do assistente diante de perguntas fora do escopo;
-- controles de acesso aos documentos;
-- configuração de segurança de rede;
-- aplicação de regras de segurança e conformidade.
+A arquitetura conceitual mostra como atendimento, documentos oficiais, inteligência artificial e controles de segurança trabalham em conjunto. Ela representa a visão da solução e não uma implantação bancária completa.
 
-O objetivo desta etapa não é entregar um sistema bancário completo para produção, mas validar os fundamentos necessários para uma solução futura.
+## Materiais para consulta
 
-## When: Em que etapa estamos?
+- [Arquitetura conceitual](docs/architecture/Arquitetura.png)
+- [Evidências da demonstração](evidence/)
+- [Testes do assistente](evidence/bedrock/)
+- [Evidências de acompanhamento e custos](evidence/observability/)
+- [Prompts utilizados nas avaliações](prompts/)
+- [Licença do projeto](LICENSE)
 
-O projeto está em desenvolvimento.
+## Próxima evolução recomendada
 
-A arquitetura conceitual e o escopo do assistente já foram definidos. As diferentes frentes técnicas estão sendo implementadas e documentadas pela Squad.
-
-Os resultados dos testes e as evidências serão adicionados ao projeto conforme cada etapa for concluída.
-
-## Arquitetura conceitual
-
-![Arquitetura Conceitual](docs/architecture/Arquitetura.png)
-
-A arquitetura representa, em alto nível, como os principais componentes do projeto trabalham juntos para receber uma solicitação, identificar seu assunto, utilizar informações oficiais e aplicar controles de segurança antes da resposta.
-
-## Resultado esperado
-
-Ao final da Sprint, a Squad deve demonstrar que o assistente consegue:
-
-- reconhecer o assunto de mensagens relacionadas ao Pix;
-- produzir respostas fundamentadas;
-- utilizar documentos armazenados de forma segura;
-- limitar acessos ao necessário;
-- manter respostas dentro do escopo definido;
-- recusar solicitações inadequadas ou não suportadas.
+A próxima fase deve transformar a prova de conceito em um piloto mensurável. A prioridade é ampliar os testes, automatizar a consulta aos documentos oficiais, definir indicadores de negócio e submeter a solução às avaliações de segurança, privacidade e conformidade exigidas para um ambiente bancário.
 
 ---
 
-# English
-
-## Why: Why does this project exist?
-
-Digital banks receive a high volume of Pix-related customer messages, including questions about transaction limits, refunds, fraud, scheduling, and Pix keys.
-
-Responding quickly is important, but those responses also need to be consistent, safe, and based on reliable information.
-
-This project proposes the foundation for a triage assistant that supports customer service by identifying the topic of each message and producing an initial response based on official documentation.
-
-The goal is to reduce inconsistent answers, limit out-of-scope responses, and demonstrate how security controls can be included from the beginning of the solution.
-
-## What: What does the assistant do?
-
-The assistant is designed to:
-
-- identify the main topic of a Pix-related customer message;
-- classify requests into predefined categories;
-- generate responses based on official public documents;
-- avoid answers that are not supported by available information;
-- refuse requests outside its defined scope;
-- apply security and compliance rules before responding.
-
-The initial categories are:
-
-- Refund
-- Transaction Limit
-- Fraud/Scam
-- Scheduling
-- Pix Key
-
-## Who: Who is this solution for?
-
-The solution represents a digital banking customer service scenario.
-
-It can support teams responsible for first-level customer interactions, especially when they need to:
-
-- quickly identify the nature of a request;
-- consult official information;
-- provide more consistent responses;
-- identify situations that should not be answered automatically.
-
-No real customer data is used in this project.
-
-## How: How does it work?
-
-The flow is intentionally simple:
-
-Customer sends a Pix-related message  
-↓  
-The topic of the message is identified  
-↓  
-The assistant uses authorized information  
-↓  
-Security and compliance rules are applied  
-↓  
-A response is provided to the customer
-
-If the request falls outside the assistant's defined scope, the response should be blocked or safely refused.
-
-### Information sources
-
-The knowledge base uses official public documents from Banco Central do Brasil related to Pix.
-
-The selected materials cover topics such as:
-
-- user experience;
-- transaction processing;
-- dispute resolution;
-- operational timing and deadlines.
-
-These documents provide a reliable reference so that responses can be grounded in verifiable information.
-
-## How: How is security handled?
-
-The solution was designed around several principles from the beginning:
-
-- only public or authorized documents are used;
-- no real customer data is included;
-- stored documents are not publicly accessible;
-- access is limited to what is actually required;
-- controls are applied to reduce inappropriate responses;
-- requests outside the defined scope are refused.
-
-Security follows a shared responsibility model.
-
-AWS is responsible for the infrastructure supporting the services used in the project.
-
-The Squad is responsible for securely configuring those services, managing access, selecting the documents used, and defining the assistant's behavioral boundaries.
-
-## What: What is being validated?
-
-During the Sprint, the Squad validates the main components required for this experience:
-
-- message classification by topic;
-- responses grounded in official documents;
-- assistant behavior when receiving out-of-scope requests;
-- access control for stored documents;
-- network security configuration;
-- security and compliance controls.
-
-The purpose of this stage is not to deliver a complete production banking system, but to validate the foundations required for a future solution.
-
-## When: What stage is the project in?
-
-The project is currently in development.
-
-The conceptual architecture and assistant scope have already been defined. The different technical workstreams are being implemented and documented by the Squad.
-
-Test results and supporting evidence will be added as each stage is completed.
-
-## Conceptual Architecture
-
-![Conceptual Architecture](docs/architecture/Arquitetura.png)
-
-The architecture provides a high-level view of how the main project components work together to receive a request, identify its topic, use official information, and apply security controls before responding.
-
-## Expected Outcome
-
-By the end of the Sprint, the Squad should demonstrate that the assistant can:
-
-- recognize the topic of Pix-related customer messages;
-- generate grounded responses;
-- use documents stored securely;
-- restrict access to what is necessary;
-- keep responses within the defined scope;
-- refuse unsupported or inappropriate requests.
+**Squad 4 - AI/R Agentic AI Engineering**  
